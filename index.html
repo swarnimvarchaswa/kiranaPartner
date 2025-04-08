@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiranaPartner - Empowering Local Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kirana-green': '#2E7D32',
+                        'kirana-darkgreen': '#1B5E20',
+                        'kirana-lightgreen': '#A5D6A7',
+                        'kirana-cream': '#F1F8E9'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins bg-kirana-cream">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-kirana-green to-green-600">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-white font-bold text-2xl">KiranaPartner</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#stories" class="text-white hover:text-green-200 transition">Success Stories</a>
+                <a href="#features" class="text-white hover:text-green-200 transition">Features</a>
+                <a href="#join" class="text-white hover:text-green-200 transition">Join Us</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none" id="mobileMenuButton">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">Your Store. Your Legacy. <span
+                        class="block">Our Technology.</span></h1>
+                <p class="mt-6 text-lg text-white opacity-90">We don't just build software. We protect your family's
+                    heritage while preparing it for the future.</p>
+                <div class="mt-8">
+                    <a href="#join"
+                        class="bg-white text-kirana-green font-bold px-8 py-3 rounded-full inline-block hover:bg-green-50 transition">Join
+                        The Movement</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 md:px-28">
+                <img src="main.png" alt="Kirana Owner" class="rounded-lg shadow-xl mx-auto ">
+            </div>
+        </div>
+    </header>
+
+    <!-- Legacy Section -->
+    <section class="container mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:px-28">
+                <img src="second.png" alt="Family Business" class="rounded-lg shadow-lg mx-auto">
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-3xl font-bold text-gray-800 leading-tight">Your store is more than a business.<br>It's
+                    your family's legacy.</h2>
+                <p class="mt-6 text-gray-600 text-lg">For generations, your family has served the community. Your
+                    customers aren't just transactions - they're neighbors, friends, and the children you've watched
+                    grow up.</p>
+                <p class="mt-4 text-gray-600 text-lg">We understand that your kirana store isn't just a source of
+                    income. It's your heritage, your identity, and your family's future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="stories" class="bg-kirana-darkgreen text-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Stories From Our Kirana Family</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <img src="1.png" alt="Store Owner" class="rounded-full mr-4 h-20 w-20">
+                        <div>
+                            <h3 class="font-bold">Ramesh Patel</h3>
+                            <p class="text-green-300 text-sm">Running his store for 35 years</p>
+                        </div>
+                    </div>
+                    <p class="italic">"My father started this store in 1970. I was afraid technology would destroy what
+                        we built. Instead, it's helping us thrive. My son now wants to continue our legacy."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <img src="2.png" alt="Store Owner" class="rounded-full mr-4 h-20 w-20">
+                        <div>
+                            <h3 class="font-bold">Priya Sharma</h3>
+                            <p class="text-green-300 text-sm">Second-generation store owner</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I was losing customers to big companies. Now our regular customers are coming
+                        back, plus many new ones. My mother is so proud to see how we've grown what she started."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-green-800 p-6 rounded-lg shadow-lg transform transition hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <img src="3.png" alt="Store Owner" class="rounded-full mr-4 h-20 w-20">
+                        <div>
+                            <h3 class="font-bold">Vikram Singh</h3>
+                            <p class="text-green-300 text-sm">Transformed his family store</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I almost had to close our 40-year-old store. Instead, we're now serving three
+                        times as many customers. My father's dream lives on, stronger than ever."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-14">Tools Built For Your Success</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Feature 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-kirana-green">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-kirana-green" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Simple Inventory Management</h3>
+                <p class="text-gray-600">Know exactly what's selling and what's not. Never miss a sale because you ran
+                    out of stock. Designed to be as easy as writing in your register book.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-kirana-green">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-kirana-green" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Working Capital When You Need It</h3>
+                <p class="text-gray-600">Access inventory financing based on your store's performance. Stock up on what
+                    sells without depleting your savings. Your business success is our priority.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-kirana-green">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-kirana-green" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Build Customer Relationships</h3>
+                <p class="text-gray-600">Know your customers by name and their preferences. Create personalized
+                    experiences that big retailers can't match. Turn occasional shoppers into loyal family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="bg-gradient-to-b from-green-100 to-kirana-cream py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800">Your Family's Journey</h2>
+                <p class="mt-4 text-gray-600 text-lg">Every kirana store has a story. A legacy of hard work, dedication,
+                    and community service.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-kirana-green">
+                </div>
+
+                <!-- Timeline items -->
+                <div class="md:flex md:flex-col md:items-center">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col md:flex-row md:justify-between items-center mb-16">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right order-1">
+                            <h3 class="text-xl font-bold text-gray-800">The Legacy Begins</h3>
+                            <p class="mt-2 text-gray-600">Your parents or grandparents opened shop with nothing but
+                                determination and trust from the community.</p>
+                        </div>
+                        <div
+                            class="bg-kirana-green w-10 h-10 rounded-full items-center justify-center z-10 order-2 hidden md:flex">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div class="md:w-5/12 md:pl-4 px-4 md:px-20 order-3 mb-8 md:mb-0">
+                            <img src="firs.png" alt="Legacy" class="rounded-lg shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex flex-col md:flex-row md:justify-between items-center mb-16">
+                        <div class="md:w-5/12 mb-8 md:mb-0 order-3 md:order-1 px-4 md:px-20">
+                            <img src="third.png" alt="Growth" class="rounded-lg shadow-md mx-auto">
+                        </div>
+                        <div
+                            class="bg-kirana-green w-10 h-10 rounded-full items-center justify-center z-10 order-1 md:order-2 hidden md:flex">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div class="md:w-5/12 md:pl-4 order-2 md:order-3">
+                            <h3 class="text-xl font-bold text-gray-800">Challenges & Growth</h3>
+                            <p class="mt-2 text-gray-600 mb-8 md:mb-0">Through economic ups and downs, competition, and
+                                changing neighborhoods, your store adapted and persevered.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex flex-col md:flex-row md:justify-between items-center">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right order-1">
+                            <h3 class="text-xl font-bold text-gray-800">Digital Transformation</h3>
+                            <p class="mt-2 text-gray-600">Now, it's time for your store to embrace technology without
+                                losing the personal touch that makes it special.</p>
+                        </div>
+                        <div
+                            class="bg-kirana-green w-10 h-10 rounded-full items-center justify-center z-10 order-2 hidden md:flex">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div class="md:w-5/12 md:pl-4 px-4 md:px-20 order-3 mb-8 md:mb-0">
+                            <img src="fourth.png" alt="Digital Future" class="rounded-lg shadow-md mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-kirana-darkgreen rounded-xl shadow-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8 md:p-12 bg-white">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Join Our Kirana Family</h2>
+                        <p class="text-gray-600 mb-8">Enter your details below and we'll contact you to discuss how we
+                            can help your store thrive in the digital age while preserving your unique legacy.</p>
+
+                        <form id="joinForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Store Owner
+                                    Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-kirana-green focus:outline-none"
+                                    placeholder="Your Name">
+                            </div>
+
+                            <div>
+                                <label for="storeName" class="block text-sm font-medium text-gray-700 mb-1">Store
+                                    Name</label>
+                                <input type="text" id="storeName"
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-kirana-green focus:outline-none"
+                                    placeholder="Your Store Name">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone
+                                    Number</label>
+                                <input type="tel" id="phone"
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-kirana-green focus:outline-none"
+                                    placeholder="Your Phone Number">
+                            </div>
+
+                            <div>
+                                <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Store
+                                    Location</label>
+                                <input type="text" id="address"
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-kirana-green focus:outline-none"
+                                    placeholder="Your Store Address">
+                            </div>
+
+                            <div>
+                                <label for="years" class="block text-sm font-medium text-gray-700 mb-1">Years in
+                                    Business</label>
+                                <select id="years"
+                                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-kirana-green focus:outline-none">
+                                    <option value="">Select Years</option>
+                                    <option value="0-5">0-5 years</option>
+                                    <option value="6-15">6-15 years</option>
+                                    <option value="16-30">16-30 years</option>
+                                    <option value="30+">More than 30 years</option>
+                                </select>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-kirana-green text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition">Secure
+                                Your Family's Legacy</button>
+                        </form>
+
+                        <div id="formSuccess" class="mt-4 text-green-600 font-medium hidden">
+                            Thank you! We'll contact you within 24 hours to discuss your store's journey.
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 bg-kirana-darkgreen p-8 md:p-12 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Why Join Us?</h3>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-2 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Preserve your store's legacy while embracing digital modernization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-2 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Access to working capital to grow your business without financial stress</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-2 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Simple technology designed for busy store owners, not tech experts</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-2 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Join a community of store owners who share your values and challenges</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-300 mr-2 flex-shrink-0" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Keep your children interested in joining the family business</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8 border-t border-green-800 pt-8">
+                            <p class="italic">"After 40 years of running our store the traditional way, we were hesitant
+                                to change. But this platform helped us grow our business while keeping our personal
+                                touch. Our customers love the convenience, and we love the control."</p>
+                            <p class="font-bold mt-2">- Suresh & Meena Agarwal, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">KiranaPartner</h3>
+                    <p class="text-gray-400 max-w-xs">Empowering local kirana stores to thrive in the digital age while
+                        preserving their legacy and community connections.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Company</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Our Team</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Success Stories</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Training Videos</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Data Protection</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500">© 2025 KiranaPartner. All rights reserved.</p>
+
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm5.52 7.52v.396c0 3.908-2.953 8.484-8.484 8.484-1.676 0-3.254-.493-4.576-1.336.233.026.467.04.701.04 1.376 0 2.646-.473 3.657-1.267-1.29-.026-2.379-.867-2.755-2.02.18.026.362.052.544.052.258 0 .52-.026.76-.078-1.342-.272-2.352-1.45-2.352-2.874v-.038c.402.206.84.334 1.31.36a2.98 2.98 0 01-1.32-2.48c0-.546.146-1.06.4-1.498a8.37 8.37 0 006.092 3.099c-.05-.232-.076-.448-.076-.682 0-1.628 1.32-2.947 2.948-2.947.85 0 1.62.36 2.16.93a5.78 5.78 0 001.88-.722 2.95 2.95 0 01-1.29 1.628 5.99 5.99 0 001.706-.464 6.358 6.358 0 01-1.476 1.524z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.querySelector('.md\\:flex.space-x-8');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('bg-kirana-green');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('w-full');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('space-x-0');
+            mobileMenu.classList.toggle('space-y-4');
+        });
+
+        // Form submission
+        const joinForm = document.getElementById('joinForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        joinForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Normally would send data to server here
+
+            // Show success message
+            formSuccess.classList.remove('hidden');
+            joinForm.reset();
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Animation effects on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.transform');
+
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+
+                // If element is in viewport
+                if (position.top < window.innerHeight && position.bottom >= 0) {
+                    element.classList.add('transition-transform', 'duration-700', 'ease-out');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on page load
+    </script>
+</body>
+
+</html>
